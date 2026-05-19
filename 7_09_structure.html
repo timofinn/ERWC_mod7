@@ -57,6 +57,22 @@
   .no-copy { font-size: 0.82rem; background: #FFF3CD; border: 1px solid #F5C842; border-radius: 6px; padding: 6px 10px; margin-top: 8px; color: #7A5C00; }
   hr.divider { border: none; border-top: 1px solid var(--teal-light); margin: 14px 0; }
   hr.dark-divider { border: none; border-top: 2px solid var(--teal-mid); margin: 18px 0; }
+
+  /* Procedure moves */
+  .move-row { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+  .move-num { background: var(--teal); color: var(--white); font-family: 'DM Serif Display', serif; font-size: 1rem; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .move-text strong { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--teal); margin-bottom: 3px; }
+  .move-text p { font-size: 0.93rem; color: var(--dark); line-height: 1.6; margin: 0; }
+
+  /* Sketchnote prompt */
+  .sketchnote { background: var(--gold-light); border: 1.5px dashed var(--gold); border-radius: 8px; padding: 14px 16px; margin-top: 14px; }
+  .sketchnote-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 6px; }
+  .sketchnote p { font-size: 0.88rem; color: var(--dark); line-height: 1.6; margin: 0; }
+
+  /* Aloud check */
+  .aloud-box { background: #FDF3F2; border-left: 3px solid #C0392B; border-radius: 0 8px 8px 0; padding: 12px 14px; margin-top: 10px; }
+  .aloud-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: #C0392B; margin-bottom: 5px; }
+  .aloud-box p { font-size: 0.88rem; color: var(--dark); line-height: 1.6; margin: 0; }
 </style>
 </head>
 <body>
@@ -157,21 +173,49 @@
     <details class="inner assignment">
       <summary>Skip to the Assignment</summary>
       <div class="inner-body">
-        <div class="step">
-          <div class="step-label">Step 1 — Find an Example</div>
-          <p>Search for chiasmus in speeches, literature, or song lyrics. It should make you do a double-take when you hear the flip.</p>
-          <div class="no-copy">Write down: the example and where exactly the A-B flips to B-A.</div>
+
+        <div class="move-row">
+          <div class="move-num">1</div>
+          <div class="move-text">
+            <strong>Find a real reversal — not a restatement</strong>
+            <p>Chiasmus only works when the flip actually inverts the logic. "We made the school great and the school made us great" is not a chiasmus — both halves say the same thing. You need a genuine A→B then B→A where the direction of the relationship changes. Write down what relationship or idea you want to flip before you write a single word.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 2 — Write It</div>
-          <p>Take a phrase and reverse its logic. The second half should genuinely invert the first — not just restate it. Hint: start with "Not A but B" then flip to "Not B but A" to find the shape. Two attempts minimum.</p>
+
+        <div class="move-row">
+          <div class="move-num">2</div>
+          <div class="move-text">
+            <strong>Use the scaffold: "Not A, but B / Not B, but A"</strong>
+            <p>This is the fastest way to find the shape. Write "Not ___, but ___" for the first half. Then flip it: "Not ___, but ___" in reverse. Once you have the shape, you can drop the "Not" and tighten the language. Write three attempts. Cross out the two that don't genuinely reverse the logic. Keep the one where the second half turns the first inside out.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 3 — Say It</div>
-          <p>Read it aloud. If the flip doesn't land, the logic might not actually be reversed — just restated. Tighten it until the second half turns the first inside out.</p>
+
+        <div class="move-row">
+          <div class="move-num">3</div>
+          <div class="move-text">
+            <strong>Tighten it — then extend it</strong>
+            <p>A chiasmus should be short enough to land in one breath. Trim every word that isn't doing work. Then, if you want, extend the thought after the flip — like the Watts example: "You play the piano. You don't work the piano." The flip is complete in six words. Everything after it is the argument that follows from the flip. Two drafts, two different reversals.</p>
+          </div>
         </div>
+
+        <div class="move-row">
+          <div class="move-num">4</div>
+          <div class="move-text">
+            <strong>Read it aloud — wait for the double-take</strong>
+            <p>A good chiasmus makes the listener pause. They hear it, process the flip, and then nod. Read it to your partner and watch their face. No reaction = the flip didn't land. A pause and a nod = it worked. If they say "wait, say that again" — that's the best possible sign.</p>
+          </div>
+        </div>
+
+        <div class="aloud-box">
+          <div class="aloud-label">The test</div>
+          <p>Your partner repeats the chiasmus back to you from memory. If they can't, it's either too complicated or the flip wasn't memorable enough. Simplify until it sticks in one hearing.</p>
+        </div>
+
+        <div class="sketchnote">
+          <div class="sketchnote-label">Sketchnote It</div>
+          <p>Draw an X — that's the shape of chiasmus. Label the top-left with A, the top-right with B. Then at the bottom, show B on the left and A on the right, flipped. Write your two key words in the four corners. In the center where the lines cross, write the word or idea that the flip reveals. The X is the device. The center is the argument.</p>
+        </div>
+
       </div>
     </details>
 
@@ -233,21 +277,49 @@
     <details class="inner assignment">
       <summary>Skip to the Assignment</summary>
       <div class="inner-body">
-        <div class="step">
-          <div class="step-label">Step 1 — Find an Example</div>
-          <p>Find hypophora in a speech, sermon, op-ed, or advertisement. The question should feel like the one the audience was already silently thinking.</p>
-          <div class="no-copy">Write down: the example and what effect the self-answered question creates.</div>
+
+        <div class="move-row">
+          <div class="move-num">1</div>
+          <div class="move-text">
+            <strong>Find the question already in the room</strong>
+            <p>The question in a hypophora isn't a question you invented — it's one the audience is already silently asking. Write down three things your audience is probably thinking right now: about this moment, about what comes next, about high school, about themselves. Those are your candidate questions. The best hypophora voices what people are already feeling.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 2 — Write It</div>
-          <p>Ask the question your audience is already thinking — then answer it in a way they didn't expect. The answer is where the argument lives. Two versions, two different questions, minimum.</p>
+
+        <div class="move-row">
+          <div class="move-num">2</div>
+          <div class="move-text">
+            <strong>Kill the obvious question — find the unexpected answer</strong>
+            <p>"Why are we here?" has an obvious answer that kills momentum. "Why does this moment feel so strange?" names what people are actually experiencing. Cross out the question with an obvious answer. Keep the one that needs a real answer. Then write the answer — and make it land somewhere unexpected. The answer is the argument. Don't waste it on what they already know.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 3 — Say It</div>
-          <p>Read it aloud. The question should feel like it came from the room. The answer should feel like a gift back — or a small surprise.</p>
+
+        <div class="move-row">
+          <div class="move-num">3</div>
+          <div class="move-text">
+            <strong>Draft: question, then answer across 2–4 sentences</strong>
+            <p>Ask the question. Then answer it — not in one word, but in 2–4 sentences that build toward a specific, surprising conclusion. The answer earns the question. Write two drafts, each with a different question drawn from your candidate list.</p>
+          </div>
         </div>
+
+        <div class="move-row">
+          <div class="move-num">4</div>
+          <div class="move-text">
+            <strong>Read it aloud — check if the question felt real</strong>
+            <p>Read it to your partner. One question for them: did the opening question feel like it came from the room, or did it feel like a setup? A setup = rewrite the question. If the question felt real, ask them: did the answer surprise you, or did you already know it was coming? Already knew it = find a less obvious answer.</p>
+          </div>
+        </div>
+
+        <div class="aloud-box">
+          <div class="aloud-label">The test</div>
+          <p>Two things your partner checks: (1) Did the question feel like something they were actually wondering? (2) Did the answer land somewhere unexpected? Both need to be yes.</p>
+        </div>
+
+        <div class="sketchnote">
+          <div class="sketchnote-label">Sketchnote It</div>
+          <p>Draw a thought bubble on the left — that's the audience's unspoken question. Draw a speech bubble on the right — that's your answer. Connect them with an arrow pointing from the thought bubble to the speech bubble: you're intercepting their internal monologue and redirecting it. Inside the thought bubble, write the question in keywords. Inside the speech bubble, write the core of your unexpected answer. Surround the answer bubble with small icons that capture what makes it surprising.</p>
+        </div>
+
       </div>
     </details>
 
@@ -313,21 +385,49 @@
     <details class="inner assignment">
       <summary>Skip to the Assignment</summary>
       <div class="inner-body">
-        <div class="step">
-          <div class="step-label">Step 1 — Find an Example</div>
-          <p>Find a parallelism where the repeated grammatical structure makes a list feel like one unified statement.</p>
-          <div class="no-copy">Write down: the example and what the repeated structure does to the rhythm.</div>
+
+        <div class="move-row">
+          <div class="move-num">1</div>
+          <div class="move-text">
+            <strong>Choose your grammatical template</strong>
+            <p>Parallelism starts with a repeating grammatical shape. Pick one before you write any content. Options: "We came to ___." / "She ___, she ___, she ___." / "With ___, with ___, with ___." / "[Verb] any ___." Write your template at the top of the page and commit to it. Every item has to fit the same mold.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 2 — Write It</div>
-          <p>Write three parallel phrases that all start the same grammatical way. Let the third land heaviest. Then try a second set with a different opening structure. Two attempts minimum.</p>
+
+        <div class="move-row">
+          <div class="move-num">2</div>
+          <div class="move-text">
+            <strong>Draft three items — then check the grammar, not just the meaning</strong>
+            <p>Write your three items using the template. Then read them back and check: is each item grammatically identical in structure? A common mistake is letting the third item become a clause when the first two were phrases. "She worked hard, she stayed focused, and there was never a moment she gave up" — the third one breaks the mold. Fix it: "She worked hard, she stayed focused, she never gave up."</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 3 — Say It</div>
-          <p>Read it aloud. If one item sounds different — longer, shorter, differently shaped — that's where the pattern broke. Fix it until all three feel like the same weight.</p>
+
+        <div class="move-row">
+          <div class="move-num">3</div>
+          <div class="move-text">
+            <strong>Apply the tricolon rule to item three</strong>
+            <p>Parallelism and tricolon work together. Keep all three items grammatically parallel — but make item three carry the most weight in content. Same shape, more meaning. Write two drafts using two different grammatical templates.</p>
+          </div>
         </div>
+
+        <div class="move-row">
+          <div class="move-num">4</div>
+          <div class="move-text">
+            <strong>Read it aloud — listen for the rhythm breaking</strong>
+            <p>Read it to your partner. They close their eyes and listen. If one item sounds different in length or shape, they raise their hand at that item. Wherever they raise their hand — that's the broken link. Match it to the template and try again.</p>
+          </div>
+        </div>
+
+        <div class="aloud-box">
+          <div class="aloud-label">The test</div>
+          <p>Your partner taps the desk once for each item as you read. The taps should feel evenly spaced — same rhythm, same shape. If one tap comes early or late, a link broke. Find it.</p>
+        </div>
+
+        <div class="sketchnote">
+          <div class="sketchnote-label">Sketchnote It</div>
+          <p>Draw three identical containers — boxes, circles, whatever — arranged in a row or a column. Each container holds one item from your parallel series. The containers should be the same shape and size to show the matching structure. Inside each one, write the key word or phrase. Use arrows or lines to show they're part of the same chain. If you're applying the tricolon rule, shade or bold the third container to show it carries more weight — same shape, more inside.</p>
+        </div>
+
       </div>
     </details>
 

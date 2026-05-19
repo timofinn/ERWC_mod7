@@ -58,6 +58,22 @@
   .no-copy { font-size: 0.82rem; background: #FFF3CD; border: 1px solid #F5C842; border-radius: 6px; padding: 6px 10px; margin-top: 8px; color: #7A5C00; }
   hr.divider { border: none; border-top: 1px solid var(--teal-light); margin: 14px 0; }
   hr.dark-divider { border: none; border-top: 2px solid var(--teal-mid); margin: 18px 0; }
+
+  /* Procedure moves */
+  .move-row { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+  .move-num { background: var(--teal); color: var(--white); font-family: 'DM Serif Display', serif; font-size: 1rem; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .move-text strong { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--teal); margin-bottom: 3px; }
+  .move-text p { font-size: 0.93rem; color: var(--dark); line-height: 1.6; margin: 0; }
+
+  /* Sketchnote prompt */
+  .sketchnote { background: var(--gold-light); border: 1.5px dashed var(--gold); border-radius: 8px; padding: 14px 16px; margin-top: 14px; }
+  .sketchnote-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 6px; }
+  .sketchnote p { font-size: 0.88rem; color: var(--dark); line-height: 1.6; margin: 0; }
+
+  /* Aloud check */
+  .aloud-box { background: #FDF3F2; border-left: 3px solid #C0392B; border-radius: 0 8px 8px 0; padding: 12px 14px; margin-top: 10px; }
+  .aloud-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: #C0392B; margin-bottom: 5px; }
+  .aloud-box p { font-size: 0.88rem; color: var(--dark); line-height: 1.6; margin: 0; }
 </style>
 </head>
 <body>
@@ -142,21 +158,49 @@
     <details class="inner assignment">
       <summary>Skip to the Assignment</summary>
       <div class="inner-body">
-        <div class="step">
-          <div class="step-label">Step 1 — Find an Example</div>
-          <p>Search for antithesis in a speech, book, headline, or song. Check that the two halves are genuine opposites — not just two different things placed next to each other.</p>
-          <div class="no-copy">Write down: the example and what the tension between the two sides creates.</div>
+
+        <div class="move-row">
+          <div class="move-num">1</div>
+          <div class="move-text">
+            <strong>Name the argument you're making</strong>
+            <p>Antithesis doesn't just contrast two things — it makes a claim through the contrast. Before you write, finish this sentence: "I'm arguing that ___ and ___ are genuinely opposed, and the difference between them matters because ___." If you can't finish it, you don't have an antithesis yet — you have two facts next to each other.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 2 — Write It</div>
-          <p>Use the "Not X, but Y" structure. Make sure both halves are genuinely opposed. Then try a second one on a different subject. Two attempts minimum.</p>
+
+        <div class="move-row">
+          <div class="move-num">2</div>
+          <div class="move-text">
+            <strong>Find the real opposites — not just different things</strong>
+            <p>"Hard" and "easy" aren't interesting opposites. "Comfortable" and "changed" are — because the gap between them is where the argument lives. Write three pairs of opposites. Cross out the pair that's too obvious. Cross out the pair that's too vague. Circle the pair where the tension says something.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 3 — Say It</div>
-          <p>Read it aloud. The two halves should feel like they're pulling against each other. If they don't, sharpen the contrast.</p>
+
+        <div class="move-row">
+          <div class="move-num">3</div>
+          <div class="move-text">
+            <strong>Draft using parallel structure — "Not X, but Y"</strong>
+            <p>Both halves need to be grammatically parallel — same structure, opposite meaning. Try "Not X, but Y." Try "X builds ___. Y reveals ___." Try "Some people ___. Others ___." Write two drafts on different subjects. The argument should be inside the contrast, not explained after it.</p>
+          </div>
         </div>
+
+        <div class="move-row">
+          <div class="move-num">4</div>
+          <div class="move-text">
+            <strong>Read it aloud — check the pull</strong>
+            <p>The two halves should feel like they're pulling in opposite directions. If they don't, the opposites aren't sharp enough. Your partner's job: name the argument buried in the contrast. If they can't name it, sharpen it.</p>
+          </div>
+        </div>
+
+        <div class="aloud-box">
+          <div class="aloud-label">The test</div>
+          <p>Ask your partner: what's the argument? If they say "I'm not sure" or just describe the two things, the contrast isn't doing the work yet. The gap between the two halves should make a point on its own.</p>
+        </div>
+
+        <div class="sketchnote">
+          <div class="sketchnote-label">Sketchnote It</div>
+          <p>Draw two columns — or two sides of a scale. On one side, sketch a simple icon or keyword for your first half. On the other, the opposite. Use an arrow or a dividing line between them to show the tension. Label what the gap between the two sides actually argues. Keywords only — no full sentences. Let the visual do the thinking.</p>
+        </div>
+
       </div>
     </details>
 
@@ -222,21 +266,49 @@
     <details class="inner assignment">
       <summary>Skip to the Assignment</summary>
       <div class="inner-body">
-        <div class="step">
-          <div class="step-label">Step 1 — Find an Example</div>
-          <p>Find a metaphor that actually surprises you — not a dead cliché. It should make you see something you didn't see before.</p>
-          <div class="no-copy">Write down: the example and what picture it creates.</div>
+
+        <div class="move-row">
+          <div class="move-num">1</div>
+          <div class="move-text">
+            <strong>Pick the thing you want to reframe</strong>
+            <p>A metaphor doesn't describe — it argues. Choose something from your speech: high school, this moment, this class, your generation, the future. Write it down. That's your subject. Now ask: what does this thing actually behave like? Not what does it look like — what does it do?</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 2 — Write It</div>
-          <p>Pick something — anything — and make a direct claim: it IS something else. Not "like" or "as." Push past the first idea that comes to mind. The first idea is usually the cliché. Two attempts minimum.</p>
+
+        <div class="move-row">
+          <div class="move-num">2</div>
+          <div class="move-text">
+            <strong>Reject the first idea — it's probably a cliché</strong>
+            <p>Write three possible metaphors. "High school is a journey." Cross it out — everyone's heard it. "High school is a machine." Better, but vague. "High school is a waiting room — fluorescent lights, plastic chairs, everyone pretending they're not anxious." Now you're somewhere. Write three candidates. Kill the obvious one. Kill the vague one. Keep the one that makes you see something new.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 3 — Say It</div>
-          <p>Read it aloud. Does the audience see something? If you can't picture it yourself, rewrite it.</p>
+
+        <div class="move-row">
+          <div class="move-num">3</div>
+          <div class="move-text">
+            <strong>Make the direct claim — no "like," no "as"</strong>
+            <p>Write the metaphor as a flat statement of identity: "X is Y." Then extend it one sentence — follow the logic of the comparison. If high school is a waiting room, what's the appointment? What happens when the door finally opens? The extension is where the argument lives. Two drafts, two different subjects.</p>
+          </div>
         </div>
+
+        <div class="move-row">
+          <div class="move-num">4</div>
+          <div class="move-text">
+            <strong>Read it aloud — check if your partner sees it</strong>
+            <p>Read it to your partner without explaining it. One question: can they picture it? If they have to ask what you meant, the metaphor isn't concrete enough. If they nod or laugh, it's working. Revise until the image lands without a tour guide.</p>
+          </div>
+        </div>
+
+        <div class="aloud-box">
+          <div class="aloud-label">The test</div>
+          <p>Your partner closes their eyes and listens. After you read it, they describe what they saw. If what they saw matches what you intended — it works. If not, find a more concrete vehicle.</p>
+        </div>
+
+        <div class="sketchnote">
+          <div class="sketchnote-label">Sketchnote It</div>
+          <p>Draw your subject on the left. Draw your vehicle on the right. Connect them with an equals sign or an arrow — not "like," not "as." Around the vehicle, sketch two or three quick icons that capture its key qualities. Those qualities are what you're claiming about your subject. Use simple shapes: a square, a circle, a triangle. Art skills not required.</p>
+        </div>
+
       </div>
     </details>
 
@@ -314,21 +386,49 @@
     <details class="inner assignment">
       <summary>Skip to the Assignment</summary>
       <div class="inner-body">
-        <div class="step">
-          <div class="step-label">Step 1 — Find an Example</div>
-          <p>Find an analogy that builds over multiple sentences. It should feel like an argument, not a decoration.</p>
-          <div class="no-copy">Write down: the example and what argument it's making.</div>
+
+        <div class="move-row">
+          <div class="move-num">1</div>
+          <div class="move-text">
+            <strong>Name the argument, then find the vehicle</strong>
+            <p>An analogy argues — it doesn't just compare. First, write the point you want to make in plain language. Then ask: what real-world situation has the same logic? A musician who practices so the hands know what to do without asking the brain — that's the argument about preparation, translated into a vehicle. Find yours.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 2 — Write It</div>
-          <p>Pick one vehicle and commit to it across 3–4 sentences. Don't switch. The argument should follow naturally from the comparison by the final sentence. Two attempts minimum.</p>
+
+        <div class="move-row">
+          <div class="move-num">2</div>
+          <div class="move-text">
+            <strong>Commit to one vehicle — don't mix</strong>
+            <p>Write down your vehicle and three things that are true about it. Those three things become your three sentences. Do not switch vehicles mid-analogy. Mixing (athlete + student + gardener) dilutes all of them. One vehicle, held all the way through, beats three weak ones every time.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 3 — Say It</div>
-          <p>Read it aloud. Does the comparison hold from sentence to sentence? If it drifts, that's exactly where you revise.</p>
+
+        <div class="move-row">
+          <div class="move-num">3</div>
+          <div class="move-text">
+            <strong>Draft 3–4 sentences — build to the payoff</strong>
+            <p>Sentence one: introduce the vehicle. Sentences two and three: follow its logic. Sentence four: the payoff — the line that snaps the analogy back to your actual argument. "That's what four years of this has been. The concert starts now." The payoff only works if you built toward it. Write two drafts with two different vehicles.</p>
+          </div>
         </div>
+
+        <div class="move-row">
+          <div class="move-num">4</div>
+          <div class="move-text">
+            <strong>Read it aloud — check the drift</strong>
+            <p>Read it sentence by sentence to your partner. They raise a hand the moment the vehicle feels like it's drifting or switching. Wherever they raise their hand — that's where you revise. The comparison should feel like one continuous logic, not a series of related observations.</p>
+          </div>
+        </div>
+
+        <div class="aloud-box">
+          <div class="aloud-label">The test</div>
+          <p>Your partner names the vehicle and names the argument. If they can do both, the analogy worked. If they can name the vehicle but not the argument — you described something without making a point. If they can't name the vehicle — you drifted.</p>
+        </div>
+
+        <div class="sketchnote">
+          <div class="sketchnote-label">Sketchnote It</div>
+          <p>Draw two parallel tracks — like train rails. Label the top track with your vehicle (the chef, the musician, the athlete). Label the bottom track with your actual subject (high school, your class, this moment). For each sentence of your analogy, draw a tie connecting the two rails. The last tie is your payoff — make it bolder or a different color. The visual should show a sustained connection, not a single bridge.</p>
+        </div>
+
       </div>
     </details>
 

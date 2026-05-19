@@ -100,6 +100,22 @@
   hr.divider { border: none; border-top: 1px solid var(--teal-light); margin: 14px 0; }
   hr.dark-divider { border: none; border-top: 2px solid var(--teal-mid); margin: 18px 0; }
 
+  /* Procedure moves */
+  .move-row { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+  .move-num { background: var(--teal); color: var(--white); font-family: 'DM Serif Display', serif; font-size: 1rem; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .move-text strong { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--teal); margin-bottom: 3px; }
+  .move-text p { font-size: 0.93rem; color: var(--dark); line-height: 1.6; margin: 0; }
+
+  /* Sketchnote prompt */
+  .sketchnote { background: var(--gold-light); border: 1.5px dashed var(--gold); border-radius: 8px; padding: 14px 16px; margin-top: 14px; }
+  .sketchnote-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 6px; }
+  .sketchnote p { font-size: 0.88rem; color: var(--dark); line-height: 1.6; margin: 0; }
+
+  /* Aloud check */
+  .aloud-box { background: #FDF3F2; border-left: 3px solid #C0392B; border-radius: 0 8px 8px 0; padding: 12px 14px; margin-top: 10px; }
+  .aloud-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: #C0392B; margin-bottom: 5px; }
+  .aloud-box p { font-size: 0.88rem; color: var(--dark); line-height: 1.6; margin: 0; }
+
   /* Anti-tricolon warning */
   .warning-block { background: #FDF3F2; border-left: 3px solid #C0392B; border-radius: 0 8px 8px 0; padding: 14px 16px; margin-bottom: 12px; }
   .warning-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; color: #C0392B; margin-bottom: 8px; }
@@ -223,26 +239,49 @@
     <details class="inner assignment">
       <summary>Skip to the Assignment</summary>
       <div class="inner-body">
-        <div class="step">
-          <div class="step-label">Before You Write</div>
-          <p>Don't start with the structure. Start with the anchor. What's the one word or phrase that carries the weight of what you want to say? The lines that follow it are just evidence.</p>
+
+        <div class="move-row">
+          <div class="move-num">1</div>
+          <div class="move-text">
+            <strong>Name the feeling first</strong>
+            <p>Before you write a word: what do you want the audience to feel when this lands? Write it down. One word. That's your target.</p>
+          </div>
         </div>
-        <hr class="dark-divider">
-        <div class="step">
-          <div class="step-label">Step 1 — Find an Example</div>
-          <p>Search for anaphora in a speech, song, or poem. Not mine. Yours. Identify the anchor and explain what it's carrying.</p>
-          <div class="no-copy">Write down: the anchor word or phrase and what it's doing.</div>
+
+        <div class="move-row">
+          <div class="move-num">2</div>
+          <div class="move-text">
+            <strong>Find the anchor — try three, reject two</strong>
+            <p>Write three possible anchor phrases. Cross out the first one — it's probably the cliché. Cross out the weakest of the remaining two. Circle the one that carries the most weight on its own, before any repetition. "I am grateful" carries nothing. "We owe it" carries debt. That's the difference.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 2 — Write It</div>
-          <p>Pick your anchor. Write 3 lines that open with it. Each line should add evidence — not just repeat the anchor for decoration. Two attempts minimum, different anchors.</p>
+
+        <div class="move-row">
+          <div class="move-num">3</div>
+          <div class="move-text">
+            <strong>Draft three lines — each adds specific evidence</strong>
+            <p>Open every line with your anchor. After the anchor, give one specific piece of evidence: a person, a moment, a fact. Generic lines waste the anchor. Save your most specific, most emotionally loaded line for last. Do this twice — two drafts, two different anchors.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 3 — Say It</div>
-          <p>Read it aloud. If the anchor doesn't feel heavier by the third line, either the anchor isn't right or the lines aren't earning it.</p>
+
+        <div class="move-row">
+          <div class="move-num">4</div>
+          <div class="move-text">
+            <strong>Read it aloud — check the weight</strong>
+            <p>Say it out loud to a partner. One question: does the anchor feel heavier by the third line, or does it just repeat? If it just repeats, either the anchor is wrong or the lines aren't specific enough. Revise once.</p>
+          </div>
         </div>
+
+        <div class="aloud-box">
+          <div class="aloud-label">The test</div>
+          <p>Your partner answers yes or no: did the anchor earn more weight each time it came back? No = find more specific evidence for each line. Yes = you're done.</p>
+        </div>
+
+        <div class="sketchnote">
+          <div class="sketchnote-label">Sketchnote It</div>
+          <p>In your notebook, draw what anaphora looks like. Think: three lines, each starting at the same point on the left, then branching out to the right with different content. Label the anchor. Show the evidence growing. Use arrows, icons, whatever makes the structure visible to you.</p>
+        </div>
+
       </div>
     </details>
 
@@ -326,26 +365,49 @@
     <details class="inner assignment">
       <summary>Skip to the Assignment</summary>
       <div class="inner-body">
-        <div class="step">
-          <div class="step-label">Before You Write</div>
-          <p>What's the word you want ringing in the audience's ears when each line ends? It should be specific enough to mean something and simple enough to repeat without sounding mechanical.</p>
+
+        <div class="move-row">
+          <div class="move-num">1</div>
+          <div class="move-text">
+            <strong>Name the feeling first</strong>
+            <p>What do you want the audience to feel when each line lands? The closing anchor is what echoes — so name the emotional target before you pick the word.</p>
+          </div>
         </div>
-        <hr class="dark-divider">
-        <div class="step">
-          <div class="step-label">Step 1 — Find an Example</div>
-          <p>Search for antistrophe in a speech, song, or political address. Not mine. Yours. Identify the closing anchor and what it leaves the listener with.</p>
-          <div class="no-copy">Write down: the closing word or phrase and what it's doing.</div>
+
+        <div class="move-row">
+          <div class="move-num">2</div>
+          <div class="move-text">
+            <strong>Find the closing anchor — try three, reject two</strong>
+            <p>Write three candidates for your closing word or phrase. Look for something that signals resolution, defiance, or verdict. "Anyway." "Still." "For us." "Vote." Cross out the flat one. Cross out the vague one. Circle the one that stings. It should be able to close three completely different lines without wearing out.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 2 — Write It</div>
-          <p>Write 3 lines that all close with the same word. Then try a second version with a different closing word. Two attempts minimum.</p>
+
+        <div class="move-row">
+          <div class="move-num">3</div>
+          <div class="move-text">
+            <strong>Draft three lines — each arrives at the same destination</strong>
+            <p>Write three lines with different content — different situations, different people, different stakes — that all end with your anchor. The contrast between lines is what makes the repeated closing feel like a verdict rather than a pattern. Do this twice with two different closing words.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 3 — Say It</div>
-          <p>Read it aloud. Does the closing word feel heavier each time it comes back? If not, either the word isn't right or the lines before it aren't setting it up.</p>
+
+        <div class="move-row">
+          <div class="move-num">4</div>
+          <div class="move-text">
+            <strong>Read it aloud — check the echo</strong>
+            <p>Say it out loud to a partner. One question: by the third time the closing word arrives, does it feel like a verdict — or just a repetition? If it's just a repetition, the lines before it are too similar. Vary the content more, then try again.</p>
+          </div>
         </div>
+
+        <div class="aloud-box">
+          <div class="aloud-label">The test</div>
+          <p>Your partner answers: verdict or repetition? Repetition = your three lines aren't different enough from each other. Find more contrast between them.</p>
+        </div>
+
+        <div class="sketchnote">
+          <div class="sketchnote-label">Sketchnote It</div>
+          <p>Draw antistrophe in your notebook. Think: three lines converging from the left, all arriving at the same point on the right. Show the different content on the left side. Show the shared anchor landing on the right. Label what makes each line different — and what stays the same.</p>
+        </div>
+
       </div>
     </details>
 
@@ -442,21 +504,49 @@
     <details class="inner assignment">
       <summary>Skip to the Assignment</summary>
       <div class="inner-body">
-        <div class="step">
-          <div class="step-label">Step 1 — Find an Example</div>
-          <p>Find a real tricolon — in a speech, advertisement, song, or literature. Check that the third item is actually the heaviest. If it isn't, it's a grocery list.</p>
-          <div class="no-copy">Write down: the example and why the third item lands hardest — in terms of syllables, emotion, or specificity.</div>
+
+        <div class="move-row">
+          <div class="move-num">1</div>
+          <div class="move-text">
+            <strong>Name the feeling first</strong>
+            <p>What do you want the audience to feel when the third item lands? The whole sentence builds to that moment — so know where you're going before you write item one.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 2 — Write It</div>
-          <p>Write a tricolon where the third item is at least twice as long as the first two combined. Then deliberately write the anti-tricolon version — put the heavy item first — and feel how the momentum collapses. Two attempts minimum.</p>
+
+        <div class="move-row">
+          <div class="move-num">2</div>
+          <div class="move-text">
+            <strong>Write item three first</strong>
+            <p>Start at the end. Write the most specific, most emotionally loaded thing you want to say. If it fits in five words, it isn't heavy enough yet — expand it until it costs something to say. That's your item three. Items one and two are the setup; write them after.</p>
+          </div>
         </div>
-        <hr class="divider">
-        <div class="step">
-          <div class="step-label">Step 3 — Say It</div>
-          <p>Read it aloud. If you're not running slightly out of breath at the end of the third item, it isn't heavy enough. Expand it until it costs something to say.</p>
+
+        <div class="move-row">
+          <div class="move-num">3</div>
+          <div class="move-text">
+            <strong>Draft the full tricolon — then flip it deliberately</strong>
+            <p>Write items one and two: shorter, simpler, leading toward item three. Read the full sequence. Then write the anti-tricolon: put item three first, items one and two after. Read that version too. The collapse in momentum is the lesson. Do this twice with different content.</p>
+          </div>
         </div>
+
+        <div class="move-row">
+          <div class="move-num">4</div>
+          <div class="move-text">
+            <strong>Read both versions aloud — let your partner call it</strong>
+            <p>Read your real tricolon, then your anti-tricolon. Your partner says which one lands harder. If the anti-tricolon somehow sounds better, your "item three" isn't actually the heaviest — go back and find the right one.</p>
+          </div>
+        </div>
+
+        <div class="aloud-box">
+          <div class="aloud-label">The breath test</div>
+          <p>Are you slightly out of breath at the end of item three? If the sentence ends too easily, it hasn't earned the landing. Expand item three until it takes real effort to finish.</p>
+        </div>
+
+        <div class="sketchnote">
+          <div class="sketchnote-label">Sketchnote It</div>
+          <p>Draw a staircase in your notebook — three steps, each one higher than the last. Label each step with an item from your tricolon. Show item three as the tallest step, with the most text or the biggest visual weight. Add an arrow showing the direction of build. Bonus: draw the anti-tricolon as a staircase going the wrong way — tallest step first, then descending.</p>
+        </div>
+
       </div>
     </details>
 
